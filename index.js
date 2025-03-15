@@ -4,6 +4,7 @@ const bodyPaser = require('body-parser');
 const routes = require('./routes');
 
 app.use(bodyParser.json());
+app.use(error.handleError);
 
 //Use routes
 app.use('/api',routes);
